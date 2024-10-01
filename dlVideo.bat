@@ -47,7 +47,7 @@ if not exist "%ffmpeg_path%" (
     rem Extract the latest version of ffmpeg
     powershell -command "Expand-Archive -Path '%apps_path%\ffmpeg-master-latest-win64-gpl.zip' -DestinationPath '%apps_path%'"
 
-    del '%apps_path%\ffmpeg-master-latest-win64-gpl.zip'
+    del "%apps_path%\ffmpeg-master-latest-win64-gpl.zip"
 
     rem Verify download success
     if exist "%ffmpeg_path%" (
